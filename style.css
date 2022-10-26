@@ -1,172 +1,228 @@
-<hr class="mehr hrcol" style="border: 1px solid rgb(139, 41, 41);">
-<p style="text-align: center; "><span style="font-size: 36px;"><font color="#875151">𝐁𝐞𝐦-𝐯𝐢𝐧𝐝𝐨𝐬 𝐚 𝐦𝐢𝐧𝐡𝐚 𝐠𝐚𝐥𝐞𝐫𝐢𝐚 𝐝𝐞 </font><font color="#ffffff">𝐆𝐈𝐅𝐒</font></span><br></p>
-<span style="color:#ffffff"> --------------------------------------------------------------------------- 𝗔𝗙 𝗠𝗢𝗗𝗘𝗟𝗦------------------------------------------------------------------------</span><p></p>
+{
+	background:#006666;
+	overflow-x:hidden
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box
+}
+:root{
+	--font-1:Oswald,sans-serif;
+	--font-2:Arimo,sans-serif
+}
+:before,:after{
+	content:'';
+	position:absolute
+}
+a{
+	display:inline-block;
+	text-decoration:none
+}
+span{
+	display:inline-block
+}
+#jd-main,.jd-app{
+	position:relative;
+	width:100%;
+	height:auto;
+	font-size:16px;
+	font-family:var(--font-1);
+	color:#FFF;
+	overflow-x:hidden
+}
+.jd-app{
+	border-top:solid 30px #252525
+}
+.jd-container{
+	width:940px;
+	height:auto;
+	margin:0 auto;
+	position:relative
+}
+.jd-header{
+	height:270px;
+	position:relative
+}
+.jd-banner{
+	position:absolute;
+	width:100%;
+	height:270px;
+	overflow:hidden;
+	display:flex;
+	align-items:center;
+	justify-content:center
+}
+.jd-banner img{
+	width:100%
+}
+.jd-btn{
+	position:absolute;
+	width:120px;
+	height:32px;
+	right:30px;
+	top:30px;
+	background:rgba(255,255,255,.3);
+	border-radius:2px;
+	display:flex;
+	flex-direction:column;
+	z-index:100;
+	overflow:hidden
+}
+.jd-btn a{
+	width:120px;
+	height:32px;
+	line-height:32px;
+	text-align:center;
+	color:#FFF;
+	text-transform:uppercase;
+	font-family:var(--font-2);
+	font-size:.8rem;
+	transition:all .3s linear
+}
+.jd-content{
+	width:940px;
+	height:auto;
+	margin:0 auto;
+	position:relative;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	padding-top:30px
+}
+.jd-header h1{
+	text-align:center;
+	margin-top:80px;
+	display:inline-block;
+	width:100%;
+	text-shadow:5px 5px 4px rgba(0,0,0,.5)
+}
+.jd-txt{
+	width:140px;
+	height:36px;
+	background:#212121;
+	border-radius:3px;
+	text-align:center;
+	line-height:36px;
+	color:D9D9D9;
+	margin-left:calc(50% - 70px)
+}
+.jd-bottom{
+	width:100%;
+	height:90px;
+	position:absolute;
+	bottom:0;
+	background:rgba(255,255,255,.3)
+}
+.jd-bottom .jd-container{
+	display:flex;
+}
+.jd-user{
+	width:110px;
+	height:110px;
+	border-radius:50%;
+	overflow:hidden;
+	box-shadow:0 0 0 5px #d8e7f0;
+	position:absolute;
+	left:5px;
+	top:-40px
+}
+.jd-user img{
+	width:100%
+}
+.jd-navigator{
+	width:800px;
+	height:90px;
+	display:flex;
+	justify-content:space-between;
+	margin-left:140px;
+	padding-top:10px
+}
+.jd-btn-nav{
+	position:relative;
+	height:60px;
+	color:#FFF
+}
+.jd-btn-nav:after{
+	width:100%;
+	height:2px;
+	background:#9adaff;
+	left:0;
+	bottom:0
+}
+.jd-btn-nav span{
+	font-size:.9rem
+}
+.jd-btn-nav p{
+	font-size:.8rem;
+	color:#D9D9D9
+}
+.jd-box{
+	width:110px;
+	height:130px;
+	background: #dceef6;
+	box-shadow:0 0 2px 1px rgba(0,0,0,.1);
+	padding:14px;
+	margin-bottom:20px;
+	position:relative
+}
+.jd-box img{
+	width:82px;
+	height:82px;
+	border:solid 1px #212121;
+	margin:0
+}
+.jd-box span{
+	width:82px;
+	height:19px;
+	background:#212121;
+	text-align:center;
+	line-height:19px;
+	text-transform:uppercase;
+	font-size:.7rem;
+	position:absolute;
+	top:96px;
+	left:14px
+}
+.jd-footer{
+	width:100%;
+	height:30px;
+	background:#212121;
+	line-height:40px;
+	height:40px;
+	text-align:center;
+	font-size:.7rem;
+	margin-top:40px
+}
+.jd-video{
+	width:265px;
+	height:185px;
+	background:#111;
+	position:absolute;
+	bottom:50px;
+	right:10px;
+	box-shadow:-5px 5px rgba(0,0,0,.1);
+	transition:all .5s ease-out;
+	transform:translateX(300px)
+}
+.jd-video span{
+	width:100%;
+	height:35px;
+	line-height:35px;
+	text-align:center;
+	font-size:.75rem;
+	color:#8E119B;
+	background:#212121
+}
+.jd-videoBox{
+	width:265px;
+	height:150px;
+	background:#222
+}
+#-jd_1:target .jd-btn a:nth-child(1){
+	margin-top:-32px
+}
+#-jd_1:target .jd-video{
+	transform:translateX(0);
+}
 
-
-<table cellpadding="0" cellspacing="0" width="100%" style="text-align: center; ">
- <tbody><tr><td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 1</b></font> <img src="https://xatimg.com/image/3iC4Z3UCozp2.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 2</b></font> <img src="https://xatimg.com/image/TCiNsdrms0DL.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 3</b></font> <img src="https://xatimg.com/image/MHEzTPOjHE0E.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 4</b></font> <img src="https://xatimg.com/image/I9U1Mevmhy7J.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 5</b></font> <img src="https://xatimg.com/image/SDxO9z1ST4ob.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 6</b></font> <img src="https://xatimg.com/image/95cLYCq4iQzP.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 7</b></font> <img src="https://xatimg.com/image/CjvBe7ZUyqab.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 8</b></font> <img src="https://xatimg.com/image/ZLjgQim1OUTR.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 9</b></font> <img src="https://xatimg.com/image/OVjoeVCTv8jy.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 10</b></font> <img src="https://xatimg.com/image/C7VFvhoUIAbA.gif" style="font-size: 1rem;"> </div></td></tr></tbody></table><div style="text-align: center;"><span style="font-size: 1rem;"> </span>
-
-<p></p><table cellpadding="0" cellspacing="0" width="100%" style="text-align: center; ">
- <tbody><tr><td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 11</b></font> <img src="https://xatimg.com/image/poBdP7JMKW77.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 12</b></font> <img src="https://xatimg.com/image/gvkDYNfyhcXM.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 13</b></font> <img src="https://xatimg.com/image/4yYCycwjjIok.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 14</b></font> <img src="https://xatimg.com/image/XUtTMyxKTHAj.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 15</b></font> <img src="https://xatimg.com/image/NFaSCmTwlnDZ.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 16</b></font> <img src="https://xatimg.com/image/ZnUJea9dhof9.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 17</b></font> <img src="https://xatimg.com/image/pwBmHr5HHPSH.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 18</b></font> <img src="https://xatimg.com/image/nGuposd5MJNz.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 19</b></font> <img src="https://xatimg.com/image/jU2QgxJ0d2EU.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 20</b></font> <img src="https://xatimg.com/image/AHfz7sBIygES.gif" style="font-size: 1rem;"> </div></td></tr></tbody></table>
-
-<p></p><table cellpadding="0" cellspacing="0" width="100%" style="text-align: center; ">
- <tbody><tr><td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 21</b></font> <img src="https://xatimg.com/image/lxAbOQ1gkQLz.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 22</b></font> <img src="https://xatimg.com/image/UmbsB98MK0oC.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 23</b></font> <img src="https://xatimg.com/image/pOEP0Ybj207X.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 24</b></font> <img src="https://xatimg.com/image/MggWRjGXYOyP.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 25</b></font> <img src="https://xatimg.com/image/cVM5NO7R6rEh.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 26</b></font> <img src="https://xatimg.com/image/6X3F7fkNNXzJ.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 27</b></font> <img src="https://xatimg.com/image/h61RA2COyz6u.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 28</b></font> <img src="https://xatimg.com/image/6EifI6S32uTb.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 29</b></font> <img src="https://xatimg.com/image/13LhgFEt6CG2.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 30</b></font> <img src="https://xatimg.com/image/p4T3STVbVKMI.gif" style="font-size: 1rem;"> </div></td></tr></tbody></table>
-
-<p></p><table cellpadding="0" cellspacing="0" width="100%" style="text-align: center; ">
- <tbody><tr><td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 31</b></font> <img src="https://xatimg.com/image/8SgKu3MNZjeh.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 32</b></font> <img src="https://xatimg.com/image/lwiGQ6azcUJp.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 33</b></font> <img src="https://xatimg.com/image/5tDagSJaQEQx.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 34</b></font> <img src="https://xatimg.com/image/iSqFRhRmQVwR.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 35</b></font> <img src="https://xatimg.com/image/Yawf0PUpteSP.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 36</b></font> <img src="https://xatimg.com/image/xcH2QCH2mYV8.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 37</b></font> <img src="https://xatimg.com/image/IFZ3U98OZ0Gj.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 38</b></font> <img src="https://xatimg.com/image/Es3WqqRQEeNC.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 39</b></font> <img src="https://xatimg.com/image/R3HEjJ9GYR2j.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 40</b></font> <img src="https://xatimg.com/image/p4T3STVbVKMI.gif" style="font-size: 1rem;"> </div></td></tr></tbody></table>
-
-<p></p><table cellpadding="0" cellspacing="0" width="100%" style="text-align: center; ">
- <tbody><tr><td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 41</b></font> <img src="https://xatimg.com/image/vINLRqUiJYdC.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 42</b></font> <img src="https://xatimg.com/image/KFPllx5BTwPi.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 43</b></font> <img src="https://xatimg.com/image/yayGkYirmIAD.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 44</b></font> <img src="https://xatimg.com/image/6saQTqoiTuol.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 45</b></font> <img src="https://xatimg.com/image/hN5vNEqAlEOu.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 46</b></font> <img src="https://xatimg.com/image/Hv1DUm8eC1Vf.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 47</b></font> <img src="https://xatimg.com/image/0gtPnaeaMQkp.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 48</b></font> <img src="https://xatimg.com/image/FOfA5KP1ENOg.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 49</b></font> <img src="https://xatimg.com/image/wnXPYIHNVRvX.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 50</b></font> <img src="https://xatimg.com/image/hMamL8C57otK.gif" style="font-size: 1rem;"> </div></td></tr></tbody></table>
-
-<p></p><table cellpadding="0" cellspacing="0" width="100%" style="text-align: center; ">
- <tbody><tr><td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 51</b></font> <img src="https://xatimg.com/image/DVjfJHjcLFJx.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 52</b></font> <img src="https://xatimg.com/image/yiWOP7VkZQXs.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 53</b></font> <img src="https://xatimg.com/image/YQWpzXvKXm9z.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 54</b></font> <img src="https://xatimg.com/image/kWZ8U5njm7YN.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 55</b></font> <img src="https://xatimg.com/image/7WMxxLUSJmap.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 56</b></font> <img src="https://xatimg.com/image/OGu1zZbfsYKO.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 57</b></font> <img src="https://xatimg.com/image/Mo1ZIWaAebem.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 58</b></font> <img src="https://xatimg.com/image/wgkDWB2IWFEB.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 59</b></font> <img src="https://xatimg.com/image/L0AN35sKTDWy.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 60</b></font> <img src="https://xatimg.com/image/q5fQOGn0ytrt.gif" style="font-size: 1rem;"> </div></td></tr></tbody></table>
-
-<p></p><table cellpadding="0" cellspacing="0" width="100%" style="text-align: center; ">
- <tbody><tr><td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 61</b></font> <img src="https://xatimg.com/image/vlzknx4MdKLK.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 62</b></font> <img src="https://xatimg.com/image/B2dgBUhXXXzt.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 63</b></font> <img src="https://xatimg.com/image/jVt5OPIBIZUm.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 64</b></font> <img src="https://xatimg.com/image/6unBaCZnfVyn.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 65</b></font> <img src="https://xatimg.com/image/bkntiecLkf3N.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 66</b></font> <img src="https://xatimg.com/image/sOkr3rJfR3LT.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 67</b></font> <img src="https://xatimg.com/image/TgVvWKKsnu3D.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 68</b></font> <img src="https://xatimg.com/image/lJPrGdXf5siu.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 69</b></font> <img src="https://xatimg.com/image/4q7mmdzT2LuK.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 70</b></font> <img src="https://xatimg.com/image/M9OqqABFlm7d.gif" style="font-size: 1rem;"> </div></td></tr></tbody></table>
-
-<p></p><table cellpadding="0" cellspacing="0" width="100%" style="text-align: center; ">
- <tbody><tr><td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 71</b></font> <img src="https://xatimg.com/image/zywA4yeUbCrM.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 72</b></font> <img src="https://xatimg.com/image/ODHgbBd5Aqj8.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 210</b></font> <img src="https://xatimg.com/image/b6Bxw6CpldRz.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 211</b></font> <img src="https://xatimg.com/image/ccSgUmzAvqJW.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 212</b></font> <img src="https://xatimg.com/image/Mn1pliUTtT4S.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 213</b></font> <img src="https://xatimg.com/image/ikutQOKAHoTI.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 214</b></font> <img src="https://xatimg.com/image/SNAOj2zL4538.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 215</b></font> <img src="https://xatimg.com/image/C09sBioBWjfG.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 216</b></font> <img src="https://xatimg.com/image/8zM7FpKdsxXG.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 217</b></font> <img src="https://xatimg.com/image/MDubBxuiziyV.gif" style="font-size: 1rem;"> </div></td></tr></tbody></table>
-
-<p></p><table cellpadding="0" cellspacing="0" width="100%" style="text-align: center; ">
- <tbody><tr><td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 218</b></font> <img src="https://xatimg.com/image/52ghaatWqPpR.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 219</b></font> <img src="https://xatimg.com/image/Gufoi3xpB5Cf.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 220</b></font> <img src="https://xatimg.com/image/e5tHxq1HHE7n.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 221</b></font> <img src="https://xatimg.com/image/I5lIGMHJNamA.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 222</b></font> <img src="https://xatimg.com/image/Z8Gownv1BlbA.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 223</b></font> <img src="https://xatimg.com/image/klkpo0I5TKZI.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 224</b></font> <img src="https://xatimg.com/image/TBpG28BwH9X2.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 225</b></font> <img src="https://xatimg.com/image/mdz0HiZkm9xC.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 226</b></font> <img src="https://xatimg.com/image/UkojGqQcuVJq.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 227</b></font> <img src="https://xatimg.com/image/tHi0uaWZCYiW.gif" style="font-size: 1rem;"> </div></td></tr></tbody></table>
-
-<p></p><table cellpadding="0" cellspacing="0" width="100%" style="text-align: center; ">
- <tbody><tr><td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 228</b></font> <img src="https://xatimg.com/image/6czpEVZCcHWd.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 229</b></font> <img src="https://xatimg.com/image/yYkOFnOOaWji.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 230</b></font> <img src="https://xatimg.com/image/e5tHxq1HHE7n.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 231</b></font> <img src="https://xatimg.com/image/xBecMCZzKN0l.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 232</b></font> <img src="https://xatimg.com/image/Hj6HJn3vNus9.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 233</b></font> <img src="https://xatimg.com/image/JjpP5BzHglcp.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 234</b></font> <img src="https://xatimg.com/image/Mks36y9eV3RO.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 235</b></font> <img src="https://xatimg.com/image/gzrMkBmdWdIF.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 236</b></font> <img src="https://xatimg.com/image/iqwvmhpI6wCd.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 237</b></font> <img src="https://xatimg.com/image/GRvkVtdqhgt9.gif" style="font-size: 1rem;"> </div></td></tr></tbody></table>
-
-<p></p><table cellpadding="0" cellspacing="0" width="100%" style="text-align: center; ">
- <tbody><tr><td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 238</b></font> <img src="https://xatimg.com/image/fgfDZ5I3oHeg.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 239</b></font> <img src="https://xatimg.com/image/kMR8t8k6hpFa.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 240</b></font> <img src="https://xatimg.com/image/wrMWUvNsU7PL.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 241</b></font> <img src="https://xatimg.com/image/1icDM7tzVpGw.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 242</b></font> <img src="https://xatimg.com/image/aalBLQEGRRtu.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 243</b></font> <img src="https://xatimg.com/image/vWVbsAQxhroj.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 244</b></font> <img src="https://xatimg.com/image/aKn1aoz2Ju91.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 245</b></font> <img src="https://xatimg.com/image/XEAizzTdEiNK.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 246</b></font> <img src="https://xatimg.com/image/DSCZLbRfVJZ0.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 247</b></font> <img src="https://xatimg.com/image/F5m8ifebPmg7.gif" style="font-size: 1rem;"> </div></td></tr></tbody></table>
-
-<p></p><table cellpadding="0" cellspacing="0" width="100%" style="text-align: center; ">
- <tbody><tr><td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 248</b></font> <img src="https://xatimg.com/image/q19hlNUOhBsT.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 249</b></font> <img src="https://xatimg.com/image/ueAuf7YXKZwg.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 250</b></font> <img src="https://xatimg.com/image/Zne2DZXL1yTD.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 251</b></font> <img src="https://xatimg.com/image/hZOKlRAnFGXj.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 252</b></font> <img src="https://xatimg.com/image/5S2Aue40OUh6.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 253</b></font> <img src="https://xatimg.com/image/0OHm9pD92EZw.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 254</b></font> <img src="https://xatimg.com/image/flhDTtpr9WB4.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 255</b></font> <img src="https://xatimg.com/image/RRDbdy6zlUm8.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 256</b></font> <img src="https://xatimg.com/image/z4ePGBMkx4Oa.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 257</b></font> <img src="https://xatimg.com/image/yhcGjqcGVpkZ.gif" style="font-size: 1rem;"> </div></td></tr></tbody></table>
-
-<p></p><table cellpadding="0" cellspacing="0" width="100%" style="text-align: center; ">
- <tbody><tr><td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 258</b></font> <img src="https://xatimg.com/image/kebOf6AxvDDt.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 259</b></font> <img src="https://xatimg.com/image/xFnyRSa6MgcF.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 260</b></font> <img src="https://xatimg.com/image/eZWB3TVFG8zu.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 261</b></font> <img src="https://xatimg.com/image/7f36xoQTOVXj.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 262</b></font> <img src="https://xatimg.com/image/7kIebB3q6jxi.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 263</b></font> <img src="https://xatimg.com/image/dbnCBsAOBhB4.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 264</b></font> <img src="https://xatimg.com/image/wkqeOWdlAZnZ.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 265</b></font> <img src="https://xatimg.com/image/2Scd96oS1g88.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 266</b></font> <img src="https://xatimg.com/image/CEq2lJF2vHX3.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 275</b></font> <img src="https://xatimg.com/image/u3GsrEBTHmNh.gif" style="font-size: 1rem;"> </div></td></tr></tbody></table>
-<p></p><table cellpadding="0" cellspacing="0" width="100%" style="text-align: center; ">
- <tbody><tr><td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 276</b></font> <img src="https://xatimg.com/image/RELPIyvry1Ix.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 277</b></font> <img src="https://xatimg.com/image/B105BqFmu96u.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 286</b></font> <img src="https://xatimg.com/image/hXMwqvQbhjfN.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 328</b></font> <img src="https://xatimg.com/image/xv17KXm6SBRi.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 329</b></font> <img src="https://xatimg.com/image/1JaNYStnCMrh.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 331</b></font> <img src="https://xatimg.com/image/MknC5bO7Sa6H.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 333</b></font> <img src="https://xatimg.com/image/MDwgyjtDFxQQ.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 334</b></font> <img src="https://xatimg.com/image/t2cbEva2wieA.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 335</b></font> <img src="https://xatimg.com/image/ssQv08uFuPZ2.gif" style="font-size: 1rem;"> </div></td>
- <td><div style="text-align: center; width: 100px; height: 120px; background-color:#00BFFF; border: 0px solid rgb(255, 255, 255);"><font color="#F5F5F5"><b>AF- 336</b></font> <img src="https://xatimg.com/image/7ZStKxipdAvp.gif" style="font-size: 1rem;"> </div></td></tr></tbody></table>
-</div>
