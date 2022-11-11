@@ -169,7 +169,7 @@ span{
 .jd-box img{
 	width:82px;
 	height:82px;
-	border:solid 1px #212121;
+	border:solid 1px #c12e2e;
 	margin:0
 }
 .jd-box span{
@@ -212,7 +212,7 @@ span{
 	text-align:center;
 	font-size:.75rem;
 	color:#8E119B;
-	background:#212121
+	background:#c12e2e
 }
 .jd-videoBox{
 	width:265px;
