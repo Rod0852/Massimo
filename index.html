@@ -91,7 +91,13 @@
 </div> 
 
 </div> 
-<iframe src="https://player.infocelradios.com/player-barra/7378/000000" frameborder="0" width="100%" height="31"></iframe> 
+<link href='https://player.onecast.com.br/player-flutuante.css' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://player.onecast.com.br/player-flutuante.js"></script>
+<script>
+$(function(){$.kast({streaming:"https://player.onecast.com.br/proxy/7378/1/",autoPlay: 0,theme: "dark",ui: "colored",position: "right",serverInfo:""})});function load_musica_atual(){$(function(){$.ajax({url:"https://ssl.onecast.com.br:7378/currentsong",type:"GET",success:function(musica_atual){load_cover(musica_atual);}});});}setInterval(load_musica_atual,2000);
+</script>
+          
                       
  <div class="jd-content"> 
 <center> <img src="https://xatimg.com/image/OoflVG8BT78f.png" alt="o que a imagem mostra" height="110" width="521"> </center>
